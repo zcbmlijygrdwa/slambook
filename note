@@ -1,0 +1,19 @@
+---------------------------------------------------------------------------------------------------
+Eigen:  To use a vector, use Eigen::Vector3d
+        To use a matrix, use Eigen::Matrix3d
+---------------------------------------------------------------------------------------------------
+Eigen::Matrix3d class has function inverse() to calculate the inverse of the matrix. Result is a matrix;
+---------------------------------------------------------------------------------------------------
+Use Eigen:Isometry3d (but actually has a 4X4 matrix) for transform matrix. Isometry is not matrix, but a class has rotate and pretranslate functions. Has function matrix() to output matrix.
+
+Isometry3d rotate() function accept
+    - rotation matrix 3X3.
+    - rotation vector 3X1.
+    - quaternion object (with 4 value: x,y,z,w)(w is for real component).
+
+Isometry3d pretranslate() function accept Vector3d vector.
+Isometry3d can multiply with vector to perform transformation. (T*v)
+---------------------------------------------------------------------------------------------------
+Eigen::Isometry3d class has function inverse() to calculate the inverse of the transform. Result is a Isometry3d transform(4X4)
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
