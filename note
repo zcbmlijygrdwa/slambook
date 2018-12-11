@@ -15,5 +15,7 @@ Isometry3d pretranslate() function accept Vector3d vector.
 Isometry3d can multiply with vector to perform transformation. (T*v)
 ---------------------------------------------------------------------------------------------------
 Eigen::Isometry3d class has function inverse() to calculate the inverse of the transform. Result is a Isometry3d transform(4X4)
----------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+Eigen block select: mat.block(i,j,p,q);  //Block of size (p,q), starting at (i,j)
+Eigen element select: mat(i,j); //i row, j column.
+----------------------------------------------------------------------------------------
